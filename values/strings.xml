@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Wonder</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_follow">关注</string>
+    <string name="tab_discover">发现</string>
+    <string name="tab_me">我的</string>
+    <string name="title_me">我</string>
+    <string name="question">问题</string>
+    <string name="answer_owner">答主</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="answered">已答</string>
+    <string name="un_answered">未答</string>
+    <string name="csr_text_state_normal">下拉刷新 </string>
+    <string name="csr_text_state_ready">释放刷新 </string>
+    <string name="csr_text_state_refresh">正在载入</string>
+    <string name="csr_text_state_complete">刷新成功 </string>
+    <string name="csr_text_state_error">刷新失败 </string>
+    <string name="question_content">dadadasdfsfjspofjsopfjspofjsdpofjsdofksdpofkspfkdspofksdopfksdofksdopfksdofksdofkdsofksdofksdopfksdpof</string>
+</resources>

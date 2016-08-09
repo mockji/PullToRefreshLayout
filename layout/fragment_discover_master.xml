@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sohu.xzd.discover.DiscoverQuestionFragment">
+
+    <com.sohu.xzd.widget.RefreshableListView
+        android:id="@+id/master_list"
+        app:ptrMode="both"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<com.sohu.xzd.master.MasterListView-->
+            <!--android:id="@+id/master_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:divider="@color/divider"-->
+            <!--android:dividerHeight="@dimen/margin_5"-->
+            <!--android:listSelector="@null"-->
+            <!--android:visibility="gone" />-->
+    </com.sohu.xzd.widget.RefreshableListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="discover_masters" />
+</FrameLayout>

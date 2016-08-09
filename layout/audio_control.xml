@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/audio_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/question_content_back">
+
+    <RelativeLayout
+        android:id="@+id/audio_ctr_container"
+        android:layout_width="@dimen/size_15"
+        android:layout_height="@dimen/size_15"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/audio_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/play" />
+
+        <ProgressBar
+            android:id="@+id/audio_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/audio_duration"
+        style="@style/TextStyle.fff.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="60''" />
+
+    <ProgressBar
+        android:id="@+id/audio_progress"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/audio_duration"
+        android:layout_toRightOf="@+id/audio_ctr_container"
+        android:max="100"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10" />
+
+</RelativeLayout>
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_15"
+        android:paddingLeft="@dimen/padding_13"
+        android:paddingRight="@dimen/padding_13"
+        android:paddingTop="@dimen/padding_15">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/question_content"
+                style="@style/TextStyle.1b1.15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="千帆第一男神主播这个Title满意吗巴拉巴拉巴巴卡大大大大爱大大大大" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_below="@+id/question_content"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="@dimen/size_50"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/avatar" />
+
+                <TextView
+                    android:id="@+id/name_profile"
+                    style="@style/TextStyle.666.13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@+id/avatar"
+                    android:text="邱启明 | 知名主持人,媒体人"
+                    android:textSize="@dimen/txt_13" />
+
+                <TextView
+                    android:id="@+id/remain_time"
+                    style="@style/TextStyle.8c8.12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@id/avatar"
+                    android:drawableLeft="@mipmap/remain"
+                    android:drawablePadding="@dimen/padding_3"
+                    android:text="18分钟"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/want_info"
+                    style="@style/TextStyle.8c8.12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_toRightOf="@id/avatar"
+                    android:text="128个人想知道"
+                    android:textSize="@dimen/txt_12" />
+
+                <TextView
+                    android:id="@+id/want"
+                    style="@style/TextStyle.fff.13"
+                    android:background="@drawable/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:text="想知道"
+                    android:textSize="@dimen/txt_12" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

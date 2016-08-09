@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/question_content"
+        style="@style/TextStyle.1b1.15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="千帆第一男神主播这个Title满意吗巴拉巴拉巴巴卡大大大大爱大大大大" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:layout_below="@+id/question_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/avatar" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextStyle.666.13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@+id/avatar"
+            android:text="邱启明 | 知名主持人,媒体人"
+            android:textSize="@dimen/txt_13" />
+
+        <TextView
+            android:id="@+id/answer_time"
+            style="@style/TextStyle.8c8.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@id/avatar"
+            android:text="18分钟"
+            android:textSize="@dimen/txt_12" />
+
+        <ImageView
+            android:id="@+id/support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/supported" />
+
+        <TextView
+            android:id="@+id/support_count"
+            style="@style/TextStyle.8c8.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/support"
+            android:text="6"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textSize="@dimen/txt_12" />
+    </RelativeLayout>
+
+</RelativeLayout>

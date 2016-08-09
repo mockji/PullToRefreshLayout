@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.sohu.xzd.widget.SwipeRefresh
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.sohu.xzd.master.MasterListView
+            android:id="@+id/master_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/divider"
+            android:dividerHeight="@dimen/margin_5"
+            android:listSelector="@null"/>
+    </com.sohu.xzd.widget.SwipeRefresh>
+    <TextView
+        android:text="follow_master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

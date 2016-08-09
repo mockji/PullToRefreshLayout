@@ -1,0 +1,158 @@
+<resources>
+
+    <!-- BaseActivity application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarSize">@dimen/actionBarSize</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/XzdActionbar</item>
+        <item name="android:windowAnimationStyle">@style/SlideAnimTransaction</item>
+    </style>
+
+    <style name="AppTheme.AlphaAnimTransaction">
+        <item name="android:windowAnimationStyle">@style/AlphaAnimTransaction</item>
+    </style>
+
+    <style name="AppTheme.AlphaScaleAnimTransaction">
+        <item name="android:windowAnimationStyle">@style/AlphaScaleAnimTransaction</item>
+    </style>
+
+    <style name="XzdActionbar" parent="Widget.AppCompat.ActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="displayOptions">showCustom|disableHome</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="AlphaAnimTransaction" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/alpha_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/alpha_out</item>
+    </style>
+
+    <style name="AlphaScaleAnimTransaction" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/alpha_scale_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/stay</item>
+    </style>
+
+    <style name="SlideAnimTransaction" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_ouot_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_righ</item>
+    </style>
+
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="ContentBack">
+        <item name="android:background">@color/back_f0f</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="SearchInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/input_back</item>
+        <item name="android:drawableLeft">@mipmap/search</item>
+        <item name="android:drawablePadding">@dimen/padding_10</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/padding_8</item>
+        <item name="android:paddingLeft">@dimen/padding_10</item>
+        <item name="android:paddingTop">@dimen/padding_8</item>
+        <item name="android:paddingRight">@dimen/padding_8</item>
+        <item name="android:textColor">@color/txt_aea</item>
+        <item name="android:textSize">@dimen/txt_13</item>
+    </style>
+
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_audio</item>
+    </style>
+
+    <style name="StyleAudioLoading" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:maxHeight">14dp</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_audio</item>
+    </style>
+
+    <style name="TextStyle"></style>
+
+    <style name="TextStyle.fff">
+        <item name="android:textColor">@color/txt_white</item>
+    </style>
+
+    <style name="TextStyle.fff.14">
+        <item name="android:textSize">@dimen/txt_14</item>
+    </style>
+
+    <style name="TextStyle.fff.13">
+        <item name="android:textSize">@dimen/txt_13</item>
+    </style>
+
+    <style name="TextStyle.1b1">
+        <item name="android:textColor">@color/txt_1b1</item>
+    </style>
+
+    <style name="TextStyle.1b1.15">
+        <item name="android:textSize">@dimen/txt_15</item>
+    </style>
+
+    <style name="TextStyle.1b1.17">
+        <item name="android:textSize">@dimen/txt_17</item>
+    </style>
+
+    <style name="TextStyle.8c8">
+        <item name="android:textColor">@color/txt_8c8b</item>
+    </style>
+
+    <style name="TextStyle.8c8.12">
+        <item name="android:textSize">@dimen/txt_12</item>
+    </style>
+
+    <style name="TextStyle.666">
+        <item name="android:textColor">@color/txt_666</item>
+    </style>
+
+    <style name="TextStyle.666.12">
+        <item name="android:textSize">@dimen/txt_12</item>
+    </style>
+
+    <style name="TextStyle.666.10">
+        <item name="android:textSize">@dimen/txt_10</item>
+    </style>
+
+    <style name="TextStyle.666.13">
+        <item name="android:textSize">@dimen/txt_13</item>
+    </style>
+
+    <style name="TextStyle.333">
+        <item name="android:textColor">@color/txt_333</item>
+    </style>
+
+    <style name="TextStyle.333.13">
+        <item name="android:textSize">@dimen/txt_13</item>
+    </style>
+
+    <declare-styleable name="RatioFrameLayout">
+        <attr name="reference" format="enum">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+        </attr>
+        <attr name="ratioHeight" format="integer"/>
+        <attr name="ratioWidth" format="integer"/>
+    </declare-styleable>
+
+</resources>

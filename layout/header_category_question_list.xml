@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/question_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_26"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/size_4"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/label_un_answered"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/label_answered"
+            android:layout_alignBottom="@+id/label_answered"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_toLeftOf="@+id/view2"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_5"
+            android:text="@string/un_answered"
+            android:textColor="@color/txt_selectable"
+            android:textSize="@dimen/txt_13" />
+
+        <TextView
+            android:id="@+id/label_answered"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/label_un_answered"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding_5"
+            android:text="@string/answered"
+            android:textColor="@color/txt_selectable"
+            android:textSize="@dimen/txt_13" />
+
+    </RelativeLayout>
+</LinearLayout>
+
